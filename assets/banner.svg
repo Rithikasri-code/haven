@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 240" width="100%" height="240">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0e131f" />
+      <stop offset="50%" stop-color="#161f33" />
+      <stop offset="100%" stop-color="#0b0e17" />
+    </linearGradient>
+    <linearGradient id="neon" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#818cf8" />
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#38bdf8" flood-opacity="0.4" />
+    </filter>
+  </defs>
+
+  <style>
+    .mono { font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+  </style>
+
+  <!-- Border & Background -->
+  <rect x="2" y="2" width="896" height="236" rx="12" fill="url(#bg)" stroke="#1e293b" stroke-width="2" />
+  <rect x="8" y="8" width="884" height="224" rx="8" fill="none" stroke="#38bdf8" stroke-width="1" stroke-dasharray="4 4" stroke-opacity="0.3" />
+
+  <!-- Isometric Grid Accents -->
+  <g opacity="0.12" stroke="#38bdf8" stroke-width="1">
+    <path d="M 50 170 L 170 110 L 290 170 L 170 230 Z" fill="none" />
+    <path d="M 170 110 L 170 230" />
+    <path d="M 50 170 L 290 170" />
+    <path d="M 610 170 L 730 110 L 850 170 L 730 230 Z" fill="none" />
+    <path d="M 730 110 L 730 230" />
+    <path d="M 610 170 L 850 170" />
+  </g>
+
+  <!-- Radar HUD Circles on top right -->
+  <circle cx="830" cy="50" r="30" fill="none" stroke="#38bdf8" stroke-width="1" opacity="0.2" />
+  <circle cx="830" cy="50" r="18" fill="none" stroke="#818cf8" stroke-width="1" opacity="0.3" />
+  <line x1="800" y1="50" x2="860" y2="50" stroke="#38bdf8" stroke-width="1" opacity="0.2" />
+  <line x1="830" y1="20" x2="830" y2="80" stroke="#38bdf8" stroke-width="1" opacity="0.2" />
+
+  <!-- Corner Brackets -->
+  <path d="M 16 32 L 16 16 L 32 16" fill="none" stroke="#38bdf8" stroke-width="2" />
+  <path d="M 884 32 L 884 16 L 868 16" fill="none" stroke="#38bdf8" stroke-width="2" />
+  <path d="M 16 208 L 16 224 L 32 224" fill="none" stroke="#38bdf8" stroke-width="2" />
+  <path d="M 884 208 L 884 224 L 868 224" fill="none" stroke="#38bdf8" stroke-width="2" />
+
+  <!-- Main Header Content -->
+  <text x="450" y="52" text-anchor="middle" fill="#38bdf8" class="mono" font-size="13" letter-spacing="2">&lt;TACTICAL_ENGINE / HAVEN&gt;</text>
+  <text x="450" y="100" text-anchor="middle" fill="#f8fafc" class="sans" font-size="38" font-weight="800" letter-spacing="4" filter="url(#softGlow)">HAVEN</text>
+  <text x="450" y="130" text-anchor="middle" fill="#94a3b8" class="sans" font-size="14" font-weight="500" letter-spacing="1.5">NATIVE C++20 ISOMETRIC TURN-BASED STRATEGY &amp; REAL-TIME ENGINE</text>
+
+  <!-- Divider -->
+  <line x1="220" y1="146" x2="680" y2="146" stroke="#334155" stroke-width="1" />
+
+  <!-- Feature Pills -->
+  <g transform="translate(145, 162)">
+    <!-- Pill 1 -->
+    <rect x="0" y="0" width="135" height="26" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.6" />
+    <text x="67" y="17" text-anchor="middle" fill="#e2e8f0" class="mono" font-size="11">C++20 / SDL3</text>
+
+    <!-- Pill 2 -->
+    <rect x="150" y="0" width="145" height="26" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.6" />
+    <text x="222" y="17" text-anchor="middle" fill="#e2e8f0" class="mono" font-size="11">A* PathMap Engine</text>
+
+    <!-- Pill 3 -->
+    <rect x="310" y="0" width="145" height="26" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.6" />
+    <text x="382" y="17" text-anchor="middle" fill="#e2e8f0" class="mono" font-size="11">SQLite &amp; DBI Sprites</text>
+
+    <!-- Pill 4 -->
+    <rect x="470" y="0" width="135" height="26" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.6" />
+    <text x="537" y="17" text-anchor="middle" fill="#e2e8f0" class="mono" font-size="11">Cross-Platform</text>
+  </g>
+
+  <!-- Bottom status -->
+  <text x="450" y="214" text-anchor="middle" fill="#64748b" class="mono" font-size="11">17 Test Suites • Multiplatform (macOS / Windows / Linux) • Zero Original Content Bundled</text>
+</svg>
